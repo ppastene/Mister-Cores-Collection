@@ -1,0 +1,44 @@
+<misterromdescription>
+    <rbf>ffopwolf</rbf>
+    <name>Operation Wolf (FF, World, rev 2, set 1)</name>
+    <setname>opwolf</setname>
+    <year>1987</year>
+    <manufacturer>Taito</manufacturer>
+    <players>1</players>
+    <buttons>2</buttons>
+    <rotation>horizontal</rotation>
+    <rom index="0" zip="opwolf.zip|cchip.zip" type="merged" md5="none">
+        <interleave output="16">
+            <part name="b20-05-02.40" crc="3ffbfe3a" map="10"/>
+            <part name="b20-03-02.30" crc="fdabd8a5" map="01"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b20-04.39"    crc="216b4838" map="10"/>
+            <part name="b20-20.29"    crc="d244431a" map="01"/>
+        </interleave>
+        <part name="b20-07.10" crc="45c7ace3"/>
+        <part name="b20-08.21" crc="f3e19c64"/>
+        <part repeat="32768">FF</part>
+        <interleave output="16">
+            <part name="b20-13.13" crc="f6acdab1" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b20-14.72" crc="89f889e5" map="12"/>
+        </interleave>
+        <part name="cchip_upd78c11.bin" crc="43021521"/>
+        <part repeat="4096">FF</part>
+        <part name="b20-18.73" crc="5987b4e9"/>
+    </rom>
+    <switches default="ff,ff" base="16">
+        <dip name="Allow Continue" bits="1" ids="Yes,No"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="4C 1C,3C 1C,2C 1C,1C 1C"/>
+        <dip name="Coin B" bits="6,7" ids="1C 2C,1C 3C,1C 4C,1C 6C"/>
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Ammo Magazines at Start" bits="10,11" ids="4,5,7,6"/>
+        <dip name="Discount When Continuing" bits="14" ids="Yes,No"/>
+        <dip name="Language" bits="15" ids="English,Japanese"/>
+    </switches>
+    <buttons names="Fire,Grenade,Start,Coin,Pause" default="A,B,Start,Select,R" count="2"/>
+</misterromdescription>
