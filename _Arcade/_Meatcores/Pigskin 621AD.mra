@@ -7,7 +7,7 @@
   <manufacturer>Midway</manufacturer>
   <platform>Bally/Midway MCR-68k</platform>
   <setname>pigskin</setname>
-  <rbf>Arcade-MCR68</rbf>
+  <rbf>Meathax-MCR68</rbf>
   <resolution>15kHz</resolution>
   <rotation>horizontal</rotation>
   <players>2</players>

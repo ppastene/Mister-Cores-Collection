@@ -7,7 +7,7 @@
     <manufacturer>Gottlieb</manufacturer>
     <category>Platform</category>
     <rotation>vertical (ccw)</rotation>
-    <rbf>Arcade-MadPlanetsTwinStick</rbf>
+    <rbf>Meathax-MadPlanetsTwinStick</rbf>
     <buttons names="Fire,Start 1P,Start 2P,Coin,Pause,Service Select" default="A,Start,Select,R,B,L" />
     <switches default="01">
         <dip bits="0" name="Demo Sounds" ids="On,Off" />

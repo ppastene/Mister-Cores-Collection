@@ -3,7 +3,7 @@
   <setname>hardhead</setname>
   <parent>hardhead</parent>
   <mameversion>0289</mameversion>
-  <rbf>Arcade-Suna8bit</rbf>
+  <rbf>Meathax-Suna8bit</rbf>
   <resolution>15kHz</resolution>
   <rotation>horizontal</rotation>
   <homebrew>no</homebrew>

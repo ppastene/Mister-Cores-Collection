@@ -6,7 +6,7 @@
 	<year>1991</year>
 	<manufacturer>Leland Corporation</manufacturer>
 	<category>Action</category>
-	<rbf>Arcade-Leland</rbf>
+	<rbf>Meathax-Leland</rbf>
 	<rotation>vertical (ccw)</rotation>
 	<resolution>15kHz</resolution>
 	<!-- Source descriptor; release RBF timing qualification is separate. -->

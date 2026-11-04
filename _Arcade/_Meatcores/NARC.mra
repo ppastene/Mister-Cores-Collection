@@ -29,7 +29,7 @@
     <manufacturer>Williams</manufacturer>
     <category>Shooter</category>
     <players>2</players>
-    <rbf>Arcade-NARC</rbf>
+    <rbf>Meathax-NARC</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="narc.zip" md5="None">

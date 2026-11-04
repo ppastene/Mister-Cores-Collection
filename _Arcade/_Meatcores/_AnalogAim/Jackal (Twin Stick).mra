@@ -14,7 +14,7 @@
 	<setname>jackalr</setname>
 	<parent>jackal</parent>
 	<mameversion>0289</mameversion>
-	<rbf>Arcade-JackalTwinStick</rbf>
+	<rbf>Meathax-JackalTwinStick</rbf>
 	<about author="Ace" twitter="@Ace9921Tweets"></about>
 
 	<resolution>15kHz</resolution>

@@ -7,7 +7,7 @@
     <year>1993</year>
     <manufacturer>Konami</manufacturer>
     <players>4</players>
-    <rbf>Arcade-VioStorm</rbf>
+    <rbf>Meathax-VioStorm</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="viostormab.zip|viostorm.zip" md5="None" asm_md5="20ec086d1ab5a8e36d5c37fe504e9042">

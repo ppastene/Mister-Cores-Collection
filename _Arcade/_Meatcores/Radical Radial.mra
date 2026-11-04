@@ -28,7 +28,7 @@
     <year>1982</year>
     <manufacturer>Logitec Corp. (Nichibutsu USA license)</manufacturer>
     <players>2</players>
-    <rbf>Arcade-Seicross</rbf>
+    <rbf>Meathax-Seicross</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="radrad.zip" md5="61cd883a76ad65993856e411f0a30021" address="0x30000000">

@@ -4,7 +4,7 @@
   <parent>svf</parent>
   <year>1994</year>
   <manufacturer>Sega</manufacturer>
-  <rbf>Arcade-SegaSystem32</rbf>
+  <rbf>Meathax-SegaSystem32</rbf>
   <buttons names="Shoot,Pass-A,Pass-B,-,-,-,Start,Coin,Test,Service" default="A,B,X,Start,Select,R,L" count="3"/>
   <rom index="4" zip="svf.zip|jleague.zip" md5="none">
     <part name="epr-16782a.ic17" crc="b399ac47"/>

@@ -8,7 +8,7 @@
   <players>4</players>
   <joystick>8</joystick>
   <rotation>horizontal</rotation>
-  <rbf>Arcade-MetamorphicForce</rbf>
+  <rbf>Meathax-MetamorphicForce</rbf>
   <rom index="0" zip="metamrphe.zip|metamrph.zip" address="0x30000000">
     <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
     <interleave output="16">

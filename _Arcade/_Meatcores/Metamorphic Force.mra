@@ -8,7 +8,7 @@
   <players>4</players>
   <joystick>8</joystick>
   <rotation>horizontal</rotation>
-  <rbf>Arcade-MetamorphicForce</rbf>
+  <rbf>Meathax-MetamorphicForce</rbf>
   <!-- EAA only. Bank 0 lanes are swapped for the SWAB=1 downloader. -->
   <rom index="0" zip="metamrph.zip" md5="3eaf7347fab1b1c984346b0755e25a3f" address="0x30000000">
     <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>

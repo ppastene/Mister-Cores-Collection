@@ -8,7 +8,7 @@
   <platform>Art &amp; Magic</platform>
   <setname>stonebal</setname>
   <parent>stonebal</parent>
-  <rbf>Arcade-StoneBall</rbf>
+  <rbf>Meathax-StoneBall</rbf>
   <mameversion>0289</mameversion>
   <about author="Stone Ball core" source="MAME artmagic.cpp; ROM audit in docs/rom-audit.json" />
   <resolution>15kHz</resolution>

@@ -3,7 +3,7 @@
     <resolution>15kHz</resolution>
     <name>Bucky O&apos;Hare (ver EAB)</name>
     <setname>bucky</setname>
-    <rbf>Arcade-Bucky</rbf>
+    <rbf>Meathax-Bucky</rbf>
     <joystick>8</joystick>
     <rom index="0" zip="bucky.zip" address="0x30000000">
         <!-- Byte offsets for each ROM region. -->

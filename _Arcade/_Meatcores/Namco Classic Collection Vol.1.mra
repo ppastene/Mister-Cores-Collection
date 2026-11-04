@@ -4,7 +4,7 @@
     <year></year>
     <manufacturer>Namco</manufacturer>
     <category>Compilation</category>
-    <rbf>Arcade-NamcoND1</rbf>
+    <rbf>Meathax-NamcoND1</rbf>
     <mameversion>0289</mameversion>
     <rotation>vertical (cw)</rotation>
     <!-- Flat 7.5 MB image (rtl/mem/ncv1_mem.sv): 0x000000 68000 program (1 MB, big-endian words),

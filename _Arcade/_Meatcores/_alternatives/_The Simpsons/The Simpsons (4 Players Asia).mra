@@ -5,7 +5,7 @@
   <setname>simpsons4pa</setname>
   <year>1991</year>
   <manufacturer>Konami</manufacturer>
-  <rbf>Arcade-Simpsons</rbf>
+  <rbf>Meathax-Simpsons</rbf>
   <mameversion>0289</mameversion>
   <rotation>horizontal</rotation>
   <buttons names="Attack,Jump,-,Start,Coin,Pause,Service,Test" default="A,B,-,Start,Select,R,L,X" />

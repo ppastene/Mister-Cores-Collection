@@ -3,7 +3,7 @@
 	<mameversion>0270</mameversion>
 	<setname>dualaslt</setname><parent>liberate</parent>
 	<year>1984</year><manufacturer>Data East USA</manufacturer><category>Shooter</category>
-	<rbf>Arcade-DataEastLiberation</rbf>
+	<rbf>Meathax-DataEastLiberation</rbf>
 	<about author="aCORES" source="MAME liberate.cpp / liberate_v.cpp"/>
 	<resolution>15kHz</resolution><rotation>vertical</rotation><flip>yes</flip>
 	<players>2</players><joystick>8-way</joystick><num_buttons>2</num_buttons>

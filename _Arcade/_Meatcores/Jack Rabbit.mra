@@ -28,7 +28,7 @@
     <year>1984</year>
     <manufacturer>Zaccaria</manufacturer>
     <players>2</players>
-    <rbf>Arcade-Zaccaria</rbf>
+    <rbf>Meathax-Zaccaria</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="jackrabt.zip" md5="None" address="0x30000000" asm_md5="b29de5145638335cd584cb98b67ac57b">

@@ -6,7 +6,7 @@
     <year>1991</year>
     <manufacturer>Philko</manufacturer>
     <players>2</players>
-    <rbf>Arcade-DFJail</rbf>
+    <rbf>Meathax-DFJail</rbf>
     <joystick>8</joystick>
     <region>Korea</region>
     <rom index="0" zip="dfjail.zip" md5="017cdc3fec304680238de53b016096e4" address="0x30000000" asm_md5="4ed968244969710ddfbe5a2382c1f948">

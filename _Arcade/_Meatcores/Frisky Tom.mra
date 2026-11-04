@@ -28,7 +28,7 @@
     <year>1981</year>
     <manufacturer>Nichibutsu</manufacturer>
     <players>2</players>
-    <rbf>Arcade-Seicross</rbf>
+    <rbf>Meathax-Seicross</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="friskyt.zip" md5="cce428631ee131810203a0194852d02e" address="0x30000000">

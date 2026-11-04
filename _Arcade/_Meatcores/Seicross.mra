@@ -28,7 +28,7 @@
     <year>1984</year>
     <manufacturer>Nichibutsu / Alice</manufacturer>
     <players>2</players>
-    <rbf>Arcade-Seicross</rbf>
+    <rbf>Meathax-Seicross</rbf>
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="seicross.zip" md5="419bc6ae03bfc585e40e57933e4ac0d2" address="0x30000000">

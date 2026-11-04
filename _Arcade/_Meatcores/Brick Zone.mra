@@ -3,7 +3,7 @@
   <setname>brickzn</setname>
   <parent>brickzn</parent>
   <mameversion>0289</mameversion>
-  <rbf>Arcade-Suna8bit</rbf>
+  <rbf>Meathax-Suna8bit</rbf>
   <resolution>15kHz</resolution>
   <rotation>vertical (cw)</rotation>
   <homebrew>no</homebrew>
