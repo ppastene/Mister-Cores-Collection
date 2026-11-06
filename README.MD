@@ -7,7 +7,7 @@ I know many devs uses github or other platforms to share their developed cores a
 ## Considerations
 Despite being a public list of cores, I have the following considerations to allow a core being part of this list:
 - This collection shares Mister FPGA cores being available to the public by their developers without restriction independent of the source (github, patreon, devs own website, internet archive, mister fpga forums/discord server, etc...).
-- This collection is not a replacement for the update.sh and update_all.sh scripts, other collections and dabatases, but an alternative to seek and structure the cores you wanna source. My suggestion is to use update_all.sh to get certain cores and use this to source other cores to keep your installed cores organized.
+- This collection is not a replacement to the update.sh and update_all.sh scripts, to other collections and dabatases, but an alternative to seek and structure the cores you wanna install. My suggestion is to use update_all.sh to get certain cores and use this to source other cores to keep your installed cores organized.
 - Cores that aren't public to the people or are behind a paywall or authentication for whatever reason are not going be part of this collection.
 - Since this repository fetchs automatically all of the cores available I cannot guarantee the following:
     - A core was developed with vibecode or assisted by AI, with the MAME codebase and/or by studying the hardware PCB.
@@ -18,10 +18,12 @@ Despite being a public list of cores, I have the following considerations to all
 At the moment there is no database to add to the downloader.ini file like other repositories. The idea is to allow the user which cores wants to add to their mister setup, it could be all of the cores or a few from certain developer. So the best way to get this collection is to clone this repository with git clone or with the download zip option and add them manually to the SD.
 
 ## Organization
-The cores are organized by the devs name inside Mister FPGA main categories: _Arcade, _Computer, _Console and _Other (used mostly for Hybrid cores). With the arcade cores the devs name folder will also contain their related _alternative folder if available.
+The .mra files are organized by its developer name inside Mister FPGA main folders: /_Arcade, /_Computer, /_Console and /_Other (used mostly for Hybrid cores) as well the .brf files will be stored inside the respective /core folder. If the developer also offers other folders like /_alternatives it will be contained also inside the folder.
+
+If there is a name matching between .rbf files, they will be renamed adding the developer's name as a prefix. That rename will aslo affect their respective .mra files inside the brf tag.
 
 ## Roms
-This repository will not host and share any romset or bios. But soon it will have a romset.txt file with a list of all of the romset required for this list, just in case if you wanna have the roms and not search manually what are the required romset for each core.
+This repository will not host and share any romset or bios either a file or url. But soon I will share a romset.txt file with a list of all of the romset required for this collection, just in case if you wanna have the roms and not search manually what are the required romset for each core.
 
 ## Credits & Acknowledgments
-Thanks to the Mister FPGA team for their contribution to the Mister software. Also thanks to everyone who contributed to the Mister FPGA either by developing or spreading words of the project.
+Thanks to the Mister FPGA team for their contribution to the Mister Project. Also thanks to everyone who contributed to the Mister FPGA either by developing cores or spreading words of the project.
