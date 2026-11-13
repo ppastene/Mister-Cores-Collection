@@ -25,5 +25,15 @@ If there is a name matching between files they will be renamed adding the develo
 ## Roms
 This repository will not host and share any romset or bios either a file or url. But soon I will share a romset.txt file with a list of all of the romset required for this collection, just in case if you wanna have the roms and not search manually what are the required romset for each core.
 
+## Resources
+Here a list of resources like databases, documentation and repositories
+
+- [MiSTer-devel](https://github.com/MiSTer-devel) Main MiSTer organization page and distribution of cores.
+    - [Wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki): MiSTer wiki
+    - [Forums](https://misterfpga.org/): MiSTer forums
+    - [Discord](https://discord.com/invite/misterfpga): MiSTer discord server
+- [Mister Ongo Collection](https://github.com/OngoGablogian/MiSTer_Ongo): Collection of MiSTer cores from many developers and sources
+- [MiSTer-DB9](https://github.com/MiSTer-DB9): MiSTer organization in charge of host, modify and distribute cores with support for DB9 SNAC
+
 ## Credits & Acknowledgments
 Thanks to the Mister FPGA team for their contribution to the Mister Project. Also thanks to everyone who contributed to the Mister FPGA either by developing cores or spreading words of the project.
