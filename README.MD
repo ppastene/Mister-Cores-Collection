@@ -18,9 +18,9 @@ Despite being a public list of cores, I have the following considerations to all
 At the moment there is no database to add to the downloader.ini file like other repositories. The idea is to allow the user which cores wants to add to their mister setup, it could be all of the cores or a few from certain developer. So the best way to get this collection is to clone this repository with git clone or with the download zip option and add them manually to the SD.
 
 ## Organization
-The .mra files are organized by its developer name inside Mister FPGA main folders: /_Arcade, /_Computer, /_Console and /_Other (used mostly for Hybrid cores) as well the .brf files will be stored inside the respective /core folder. If the developer also offers other folders like /_alternatives it will be contained also inside the folder.
+There are four main categories in Mister: _Arcade, _Computer, _Console and _Other (used mostly for hybrid cores). Considering the great amount of arcade cores, the _Arcade folder is the only category which offer the categorization of cores by the developer name while the rest all of the cores will be on the folder's root.
 
-If there is a name matching between .rbf files, they will be renamed adding the developer's name as a prefix. That rename will aslo affect their respective .mra files inside the brf tag.
+If there is a name matching between files they will be renamed adding the developer's name as a prefix. In the case of renaming the .brf files it also affect the brf tag inside their respective .mra file.
 
 ## Roms
 This repository will not host and share any romset or bios either a file or url. But soon I will share a romset.txt file with a list of all of the romset required for this collection, just in case if you wanna have the roms and not search manually what are the required romset for each core.
