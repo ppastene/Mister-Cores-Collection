@@ -1,0 +1,33 @@
+<misterromdescription>
+    <name>Blades of Steel</name>
+    <mameversion>0220</mameversion>
+    <setname>bladestl</setname>
+    <year>1987</year>
+    <manufacturer>Konami</manufacturer>
+    <category>Sports</category>
+    <rbf>BladesOfSteel</rbf>
+
+    <!-- One core, one MRA, two versions: Blades of Steel version T (joystick) and version L (trackball). Pick the version in the OSD (Game Version);
+         the core restarts the game when it changes. Version L is played with a mouse (player 1) and the pad buttons or mouse buttons.
+         Layout (the core's ioctl address map):
+           0x00000-0x0ffff (64KB)  main CPU ROM, version T (797-t01.19c)
+           0x10000-0x17fff (32KB)  sound CPU ROM (797-c02.12d)
+           0x18000-0x1ffff (32KB)  padding, unused gap
+           0x20000-0x5ffff (256KB) sprite ROM (797a06.13h)
+           0x60000-0x9ffff (256KB) tile ROM (797a05.19h)
+           0xa0000-0x15ffff (768KB) UPD7759 speech ROM (797a03.11a + 797a04.9a)
+           0x160000-0x1600ff (256B) sprite colour PROM (797a07.16i)
+           0x160100-0x16ffff (64KB) main CPU ROM, version L (797-l01.19c, from bladestll.zip)
+         You need bladestl.zip and bladestll.zip in the games/mame folder (bladestll.zip is a clone set, the shared files are in bladestl.zip). -->
+    <rom index="0" zip="bladestl.zip|bladestll.zip" md5="none">
+        <part crc="89d7185d" name="797-t01.19c"/>
+        <part crc="65a331ea" name="797-c02.12d"/>
+        <part repeat="32768">00</part>
+        <part crc="d055f5cc" name="797a06.13h"/>
+        <part crc="5491ba28" name="797a05.19h"/>
+        <part crc="9ee1a542" name="797a03.11a"/>
+        <part crc="9ac8ea4e" name="797a04.9a"/>
+        <part crc="7aecad4e" name="797a07.16i"/>
+        <part crc="1ab14c40" name="797-l01.19c"/>
+    </rom>
+</misterromdescription>
