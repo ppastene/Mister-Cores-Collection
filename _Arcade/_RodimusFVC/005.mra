@@ -1,0 +1,96 @@
+<misterromdescription>
+    <name>005</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform>Sega G-80 Raster</platform>
+    <series>005</series>
+    <year>1981</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Shooter</category>
+
+    <setname>005</setname>
+    <parent>005</parent>
+    <mameversion>0270</mameversion>
+    <rbf>SegaG80</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>no</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Shoot,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="FC,33">
+        <dip name="Lives" bits="0,1" ids="3,4,5,6" values="0,2,1,3"/>
+        <dip name="Cabinet" bits="2" ids="Upright,Cocktail" values="1,0"/>
+        <dip name="Coin A" bits="8,11" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3 6/4,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,1C/2C,1 Coin/2 Credits 5/11,1 Coin/2 Credits 4/9,1C/3C,1C/4C,1C/5C,1C/6C" values="0,1,2,9,10,3,11,12,13,4,14,15,5,6,7,8"/>
+        <dip name="Coin B" bits="12,15" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3 6/4,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,1C/2C,1 Coin/2 Credits 5/11,1 Coin/2 Credits 4/9,1C/3C,1C/4C,1C/5C,1C/6C" values="0,1,2,9,10,3,11,12,13,4,14,15,5,6,7,8"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="005.zip">
+        <part crc="8e68533e" name="1346b.cpu-u25"/>
+        <part crc="29e10a81" name="5092.prom-u1"/>
+        <part crc="e1edc3df" name="5093.prom-u2"/>
+        <part crc="995773bb" name="5094.prom-u3"/>
+        <part crc="f887f575" name="5095.prom-u4"/>
+        <part crc="5545241e" name="5096.prom-u5"/>
+        <part crc="428edb54" name="5097.prom-u6"/>
+        <part crc="5bcb9d63" name="5098.prom-u7"/>
+        <part crc="0ea24ba3" name="5099.prom-u8"/>
+        <part crc="a79af131" name="5100.prom-u9"/>
+        <part crc="8a1cdae0" name="5101.prom-u10"/>
+        <part crc="70826a15" name="5102.prom-u11"/>
+        <part crc="7f80c5b0" name="5103.prom-u12"/>
+        <part crc="0140930e" name="5104.prom-u13"/>
+        <part crc="17807a05" name="5105.prom-u14"/>
+        <part crc="c7cdfa9d" name="5106.prom-u15"/>
+        <part crc="95f8a2e6" name="5107.prom-u16"/>
+        <part crc="d371cacd" name="5108.prom-u17"/>
+        <part crc="48a20617" name="5109.prom-u18"/>
+        <part crc="7d26111a" name="5110.prom-u19"/>
+        <part crc="a888e175" name="5111.prom-u20"/>
+        <part repeat="0x1800">FF</part>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            03 15 00 00 FF FF FC 33 00 FE 80 80 00 01 80 80
+            11 00 00 00 12 00 01 00 16 13 03 05 00 14 04 02
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 09 0A 0D 0C 0B 16 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 5: ROM -->
+    <rom index="5" md5="none" zip="005.zip">
+        <part crc="fbe0d501" name="epr-1286.sound-16"/>
+    </rom>
+
+    <!-- Index 10: ROM -->
+    <rom index="10" md5="none" zip="005.zip">
+        <part crc="1d298cb0" name="6331.sound-u8"/>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            00 0F BC 40 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 C9 10 00 0B 99 00
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="11"></nvram>
+
+    <remark>005 (Sega)</remark>
+    <mratimestamp>20261105000000</mratimestamp>
+</misterromdescription>

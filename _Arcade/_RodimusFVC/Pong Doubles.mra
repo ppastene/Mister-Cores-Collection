@@ -1,0 +1,60 @@
+<misterromdescription>
+    <name>Pong Doubles</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Pong Doubles</series>
+    <year>1973</year>
+    <manufacturer>Atari</manufacturer>
+    <category>Sports</category>
+
+    <setname>pongd</setname>
+    <parent>pongd</parent>
+    <mameversion></mameversion>
+    <rbf>Pong</rbf>
+    <about>Discrete TTL board compiled from MAME's nl_pongd.cpp netlist (tools/dlogic)</about>
+
+    <resolution>15kHz</resolution>
+    <rotation>horizontal</rotation>
+    <flip>no</flip>
+
+    <players>4 (2 teams, simultaneous)</players>
+    <joystick></joystick>
+    <special_controls>paddle</special_controls>
+    <num_buttons>0</num_buttons>
+    <buttons names="-,-,-,-,Coin,Start,-,Pause" default="Select,Start,L"/>
+
+    <switches default="00">
+        <dip name="Game Won" bits="0" ids="11,15"/>
+    </switches>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            02 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00
+            11 00 13 00 00 80 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+    <remark>Pong Doubles (Atari)</remark>
+</misterromdescription>

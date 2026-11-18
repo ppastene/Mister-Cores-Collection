@@ -1,0 +1,61 @@
+<misterromdescription>
+    <name>Rebound</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Rebound</series>
+    <year>1974</year>
+    <manufacturer>Atari</manufacturer>
+    <category>Sports</category>
+
+    <setname>rebound</setname>
+    <parent>rebound</parent>
+    <mameversion></mameversion>
+    <rbf>Pong</rbf>
+    <about>Discrete TTL board compiled from MAME's nl_rebound.cpp netlist (tools/dlogic)</about>
+
+    <resolution>15kHz</resolution>
+    <rotation>horizontal</rotation>
+    <flip>no</flip>
+
+    <players>2 (simultaneous)</players>
+    <joystick></joystick>
+    <special_controls>paddle</special_controls>
+    <num_buttons>0</num_buttons>
+    <buttons names="-,-,-,-,Coin,Start,-,Pause" default="Select,Start,L"/>
+
+    <switches default="00">
+        <dip name="Game Won" bits="0" ids="11,15"/>
+        <dip name="Coinage" bits="1" ids="1C/1C,1C/2C"/>
+    </switches>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            11 00 13 00 00 80 81 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+    <remark>Rebound (Atari)</remark>
+</misterromdescription>

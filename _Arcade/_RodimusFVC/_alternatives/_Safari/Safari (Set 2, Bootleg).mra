@@ -1,0 +1,60 @@
+<misterromdescription>
+    <name>Safari (Set 2, Bootleg?)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Safari</series>
+    <year>1977</year>
+    <manufacturer>Gremlin</manufacturer>
+    <category>Maze</category>
+
+    <setname>safaria</setname>
+    <parent>safari</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>horizontal</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>3</num_buttons>
+    <buttons names="Fire,Aim Up,Aim Down,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,X,Select,Start,R,L"/>
+
+    <switches default="7E">
+        <dip name="Coinage" bits="4,5" ids="4C/1C,3C/1C,2C/1C,1C/1C"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="safaria.zip|safari.zip">
+        <part crc="f27d5961" name="hu1.22c"/>
+        <part crc="11a9cb59" name="hu2.20c"/>
+        <part crc="4fe746cb" name="hu3.19c"/>
+        <part crc="f0bad948" name="hu4.17c"/>
+        <part crc="d994f98a" name="hu5.16c"/>
+        <part crc="174b5964" name="hu6.15c"/>
+        <part crc="3e94caa1" name="hu7.13c"/>
+        <part crc="a8a5dca0" name="hu8.12c"/>
+        <part crc="0ace0939" name="hu9.11c"/>
+        <part crc="9dae33ca" name="hu10.9c"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            02 00 00 00 FF 7E FF FF FE FF 80 00 80 80 80 80
+            01 02 04 03 06 07 00 05 8A 00 00 00 00 00 00 8C
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Safari (Set 2, Bootleg?) (Gremlin)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

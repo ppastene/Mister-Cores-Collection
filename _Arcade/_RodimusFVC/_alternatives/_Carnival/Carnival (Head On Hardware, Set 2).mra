@@ -1,0 +1,61 @@
+<misterromdescription>
+    <name>Carnival (Head On Hardware, Set 2)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Carnival</series>
+    <year>1980</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>carnivalha</setname>
+    <parent>carnival</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>2-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Fire,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="FE">
+        <dip name="Cabinet" bits="0" ids="Color,Black and White"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="carnivalha.zip|carnival.zip">
+        <part crc="0a5f1f65" name="epr-155.u48"/>
+        <part crc="422221ff" name="epr-156.u47"/>
+        <part crc="1551dffb" name="epr-157.u46"/>
+        <part crc="9238b5c0" name="epr-158.u45"/>
+        <part crc="5c2b9a33" name="epr-159.u44"/>
+        <part crc="dd70471f" name="epr-160.u43"/>
+        <part crc="8133ba08" name="epr-161x.u42"/>
+        <part crc="56e1c120" name="epr-162.u41"/>
+        <part repeat="0x4000">00</part>
+        <part crc="0dbaa2b0" name="epr-412.u5"/>
+        <part crc="f0084d80" name="pr-62.u44"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            12 10 00 00 FF 7E FF FF FE FE 80 80 80 80 80 00
+            13 14 00 05 04 00 03 00 88 00 00 00 00 00 00 8C
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Carnival (Head On Hardware, Set 2) (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

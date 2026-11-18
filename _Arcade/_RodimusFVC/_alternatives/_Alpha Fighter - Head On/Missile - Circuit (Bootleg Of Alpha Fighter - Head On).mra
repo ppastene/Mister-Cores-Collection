@@ -1,0 +1,71 @@
+<misterromdescription>
+    <name>Missile / Circuit (Bootleg Of Alpha Fighter / Head On)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>yes</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Alpha Fighter / Head On</series>
+    <year>19??</year>
+    <manufacturer>bootleg</manufacturer>
+    <category>Maze</category>
+
+    <setname>alphahob</setname>
+    <parent>alphaho</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>3</num_buttons>
+    <buttons names="Fire,-,Game Select,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,X,Select,Start,R,L"/>
+
+    <switches default="E0">
+        <dip name="Missile Lives" bits="0,1" ids="3,4,5,6"/>
+        <dip name="Circuit Lives" bits="4" ids="3,4"/>
+        <dip name="Missile Bonus Life" bits="2" ids="10k,15k"/>
+        <dip name="Missile Final UFO Bonus" bits="3" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="alphahob.zip|alphaho.zip">
+        <part crc="87de1bb0" name="03.bin"/>
+        <part crc="bd6dbd8e" name="13.bin"/>
+        <part crc="4c043d8b" name="16.bin"/>
+        <part crc="10005956" name="04.bin"/>
+        <part crc="bbdaf42a" name="05.bin"/>
+        <part crc="07d4c69a" name="06.bin"/>
+        <part crc="8f766b30" name="07.bin"/>
+        <part crc="88032202" name="08.bin"/>
+        <part crc="eb8278b3" name="01.bin"/>
+        <part crc="e5f622f7" name="09.bin"/>
+        <part crc="5673be86" name="11.bin"/>
+        <part crc="939903c6" name="12.bin"/>
+        <part crc="404f120c" name="02.bin"/>
+        <part crc="be76baac" name="14.bin"/>
+        <part crc="ced0a642" name="15.bin"/>
+        <part crc="ba978bca" name="10.bin"/>
+        <part repeat="0x4400">00</part>
+        <part crc="67104ea9" name="prom.u49"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            18 11 00 00 F3 F3 F3 F3 FE E0 80 80 80 80 80 00
+            09 0D 80 84 02 01 00 00 0C 00 81 88 03 04 00 00
+            0A 00 82 8B 13 05 00 00 0B 00 83 8C 34 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Missile / Circuit (Bootleg Of Alpha Fighter / Head On)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

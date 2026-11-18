@@ -1,0 +1,63 @@
+<misterromdescription>
+    <name>Breakout</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Breakout</series>
+    <year>1976</year>
+    <manufacturer>Atari</manufacturer>
+    <category>Breakout</category>
+
+    <setname>breakout</setname>
+    <parent>breakout</parent>
+    <mameversion></mameversion>
+    <rbf>Pong</rbf>
+    <about>Discrete TTL board compiled from MAME's nl_breakout.cpp netlist (tools/dlogic)</about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (cw)</rotation>
+    <flip>no</flip>
+
+    <players>2 (alternating)</players>
+    <joystick></joystick>
+    <special_controls>paddle</special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Serve,-,-,-,Coin,Start 1P,Start 2P,Pause" default="A,Select,Start,R,L"/>
+
+    <switches default="00">
+        <dip name="Free Play" bits="0,3" ids="No Free Play,100,200,300,400,500,600,700,800"/>
+        <dip name="Cabinet" bits="4" ids="Cocktail,Upright"/>
+        <dip name="Coinage" bits="5" ids="1C/1C,1C/2C"/>
+        <dip name="Balls" bits="6" ids="3,5"/>
+    </switches>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            01 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            11 12 13 14 05 80 81 82 83 84 85 86 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            1C 03 2D 03 18 00 FC 00 00 78 C8 00 68 01 84 01
+            18 00 FC 00 FF F5 00 00 4C 01 69 01 18 00 FC 00
+            4B C3 00 00 30 01 4D 01 18 00 FC 00 FF A0 00 00
+            14 01 31 01 18 00 FC 00 F0 00 32 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+    <remark>Breakout (Atari)</remark>
+</misterromdescription>

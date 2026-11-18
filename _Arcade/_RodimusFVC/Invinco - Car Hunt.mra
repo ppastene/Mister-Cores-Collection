@@ -1,0 +1,71 @@
+<misterromdescription>
+    <name>Invinco / Car Hunt</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Invinco / Car Hunt</series>
+    <year>1979</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>invcarht</setname>
+    <parent>invcarht</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>3</num_buttons>
+    <buttons names="Fire,Fire Right,Game Select,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,X,Select,Start,R,L"/>
+
+    <switches default="E2">
+        <dip name="Car Hunt Lives" bits="0,1" ids="1,2,3,4"/>
+        <dip name="Deep Scan Lives" bits="2,3" ids="1,2,3,4" values="1,2,3,0"/>
+        <dip name="Unused" bits="4" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="invcarht.zip">
+        <part crc="efefba5f" name="411.u33" offset="0x0" length="0x400"/>
+        <part crc="8fe401e2" name="412.u32"/>
+        <part crc="61ba1046" name="413.u31"/>
+        <part crc="4a521dbb" name="414.u30"/>
+        <part crc="ce12b71c" name="415.u29"/>
+        <part crc="6899d59c" name="416.u28"/>
+        <part crc="26cef14e" name="417.u27"/>
+        <part crc="02b1f507" name="418.u26"/>
+        <part crc="42385c4d" name="419.u8"/>
+        <part crc="ee83d873" name="420.u7"/>
+        <part crc="2faa2e76" name="421.u6"/>
+        <part crc="f8e5dc61" name="422.u5"/>
+        <part crc="d783eb72" name="423.u4"/>
+        <part crc="8fd4f3d4" name="424.u3"/>
+        <part crc="b0552cd4" name="425.u2"/>
+        <part crc="b611061b" name="426.u1"/>
+        <part crc="efefba5f" name="411.u33" offset="0x400" length="0x400"/>
+        <part repeat="0x4000">00</part>
+        <part crc="95cfe0d2" name="316-0389.u49"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            0D 11 00 00 F3 F3 F3 F3 FE E2 80 80 80 80 80 00
+            00 00 80 84 02 01 06 00 00 00 81 88 03 04 00 00
+            00 00 82 8B 13 05 00 00 00 00 83 8C 34 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Invinco / Car Hunt (Germany) (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

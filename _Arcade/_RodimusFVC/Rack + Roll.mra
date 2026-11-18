@@ -1,0 +1,89 @@
+<misterromdescription>
+    <name>Rack + Roll</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Rack + Roll</series>
+    <year>1986</year>
+    <manufacturer>Senko Industries (Status license from Shinkai Inc.)</manufacturer>
+    <category>Sports - Pool</category>
+
+    <setname>racknrol</setname>
+    <parent>racknrol</parent>
+    <mameversion>0289</mameversion>
+    <rbf>Galaxian</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>horizontal</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Fire,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="00,00,00">
+        <dip name="Unknown" bits="10" ids="Off,On"/>
+        <dip name="Unknown" bits="11" ids="Off,On"/>
+        <dip name="Unknown" bits="12" ids="Off,On"/>
+        <dip name="Unknown" bits="13" ids="Off,On"/>
+        <dip name="Unknown" bits="14" ids="Off,On"/>
+        <dip name="Unknown" bits="15" ids="Off,On"/>
+        <dip name="Unknown" bits="16" ids="Off,On"/>
+        <dip name="Unknown" bits="17" ids="Off,On"/>
+        <dip name="Unknown" bits="18" ids="Off,On"/>
+        <dip name="Unknown" bits="19" ids="Off,On"/>
+        <dip name="Unknown" bits="20" ids="Off,On"/>
+        <dip name="Unknown" bits="21" ids="Off,On"/>
+        <dip name="Unknown" bits="22" ids="Off,On"/>
+        <dip name="Unknown" bits="23" ids="Off,On"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="racknrol.zip">
+        <part crc="32ca5b43" name="horz_p.bin" offset="0x0" length="0x1000"/>
+        <part crc="32ca5b43" name="horz_p.bin" offset="0x1000" length="0x1000"/>
+        <part crc="32ca5b43" name="horz_p.bin" offset="0x2000" length="0x1000"/>
+        <part crc="32ca5b43" name="horz_p.bin" offset="0x3000" length="0x1000"/>
+        <part repeat="0xC000">00</part>
+        <part crc="97069ad5" name="horz_g.bin" offset="0x0" length="0x2000"/>
+        <part crc="ff64e84b" name="horz_r.bin" offset="0x0" length="0x2000"/>
+        <part crc="737802bf" name="82s123.bin"/>
+        <part repeat="0xE0">00</part>
+        <part crc="aace7fa5" name="82s147.bin" offset="0x0" length="0x40"/>
+        <part repeat="0xFEC0">00</part>
+        <part crc="97069ad5" name="horz_g.bin" offset="0x2000" length="0x2000"/>
+        <part crc="ff64e84b" name="horz_r.bin" offset="0x2000" length="0x2000"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            00 00 00 00 00 00 00 FF FF FF 80 01 02 80 80 80
+            11 12 03 04 05 01 00 02 13 14 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 04 00 0F 03 00 04 00 00 00 00 00 40 00 00 00
+            00 00 04 03
+        </part>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            01 73 39 D3 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 41 B8 00 45 23 13
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="69"></nvram>
+
+    <remark>Rack + Roll (Senko Industries (Status License From Shinkai Inc.))</remark>
+    <mratimestamp>20260928000000</mratimestamp>
+</misterromdescription>

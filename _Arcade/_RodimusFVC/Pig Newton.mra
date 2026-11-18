@@ -1,0 +1,103 @@
+<misterromdescription>
+    <name>Pig Newton</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform>Sega G-80 Raster</platform>
+    <series>Pig Newton</series>
+    <year>1983</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Action</category>
+
+    <setname>pignewt</setname>
+    <parent>pignewt</parent>
+    <mameversion>0270</mameversion>
+    <rbf>SegaG80</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>no</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Action,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="F2,33">
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Demo Sounds" bits="1" ids="Off,On"/>
+        <dip name="Lives" bits="2,3" ids="3,4,5,6" values="0,2,1,3"/>
+        <dip name="Coin A" bits="8,11" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3 6/4,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,1C/2C,1 Coin/2 Credits 5/11,1 Coin/2 Credits 4/9,1C/3C,1C/4C,1C/5C,1C/6C" values="0,1,2,9,10,3,11,12,13,4,14,15,5,6,7,8"/>
+        <dip name="Coin B" bits="12,15" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3 6/4,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,1C/2C,1 Coin/2 Credits 5/11,1 Coin/2 Credits 4/9,1C/3C,1C/4C,1C/5C,1C/6C" values="0,1,2,9,10,3,11,12,13,4,14,15,5,6,7,8"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="pignewt.zip">
+        <part crc="eccc814d" name="cpu.u25"/>
+        <part crc="fd18ed09" name="1888c.prom-u1"/>
+        <part crc="f633f5ff" name="1889c.prom-u2"/>
+        <part crc="22009d7f" name="1890c.prom-u3"/>
+        <part crc="1540a7d6" name="1891c.prom-u4"/>
+        <part crc="960385d0" name="1892c.prom-u5"/>
+        <part crc="58c5c461" name="1893c.prom-u6"/>
+        <part crc="5817a59d" name="1894c.prom-u7"/>
+        <part crc="812f67d7" name="1895c.prom-u8"/>
+        <part crc="cc0ecdd0" name="1896c.prom-u9"/>
+        <part crc="7820e93b" name="1897c.prom-u10"/>
+        <part crc="e9a10ded" name="1898c.prom-u11"/>
+        <part crc="d7ddf02b" name="1899c.prom-u12"/>
+        <part crc="8deff4e5" name="1900c.prom-u13"/>
+        <part crc="46051305" name="1901c.prom-u14"/>
+        <part crc="cb937e19" name="1902c.prom-u15"/>
+        <part crc="53239f12" name="1903c.prom-u16"/>
+        <part crc="4652cb0c" name="1913c.prom-u17"/>
+        <part crc="cb758697" name="1914c.prom-u18"/>
+        <part crc="9f3bad66" name="1915c.prom-u19"/>
+        <part crc="5bb6f61e" name="1916c.prom-u20"/>
+        <part crc="725e2c87" name="1917c.prom-u21"/>
+        <part repeat="0x800">FF</part>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            05 15 00 00 FF FF F2 33 00 FE 80 80 00 01 80 80
+            11 00 00 00 12 00 01 00 16 13 03 05 00 14 04 02
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 09 0A 0D 0C 0B 16 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 7: ROM -->
+    <rom index="7" md5="none" zip="pignewt.zip">
+        <part crc="e9de2c8b" name="1904c.bg"/>
+        <part crc="af7cfe0b" name="1905c.bg"/>
+    </rom>
+
+    <!-- Index 8: ROM -->
+    <rom index="8" md5="none" zip="pignewt.zip">
+        <part crc="c79d33ce" name="1906c.bg"/>
+        <part crc="bc839d3c" name="1907c.bg"/>
+        <part crc="92cb14da" name="1908c.bg"/>
+        <part repeat="0x1000">00</part>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            00 0F BC 40 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 CF D2 00 1E 57 4E
+            00 00 CE 0C 00 61 12 60
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="127"></nvram>
+
+    <remark>Pig Newton (Version C) (Sega)</remark>
+    <mratimestamp>20261105000000</mratimestamp>
+</misterromdescription>

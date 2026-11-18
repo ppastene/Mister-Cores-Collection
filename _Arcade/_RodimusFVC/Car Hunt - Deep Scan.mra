@@ -1,0 +1,71 @@
+<misterromdescription>
+    <name>Car Hunt / Deep Scan</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Car Hunt / Deep Scan</series>
+    <year>1979</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>carhntds</setname>
+    <parent>carhntds</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>3</num_buttons>
+    <buttons names="Fire,Fire Right,Game Select,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,X,Select,Start,R,L"/>
+
+    <switches default="E2">
+        <dip name="Car Hunt Lives" bits="0,1" ids="1,2,3,4"/>
+        <dip name="Deep Scan Lives" bits="2,3" ids="1,2,3,4" values="1,2,3,0"/>
+        <dip name="Unused" bits="4" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="carhntds.zip">
+        <part crc="0bbfdb4e" name="epr617.u33" offset="0x0" length="0x400"/>
+        <part crc="5a080b1d" name="epr618.u32"/>
+        <part crc="c6f2f399" name="epr619.u31"/>
+        <part crc="d9deb88f" name="epr620.u30"/>
+        <part crc="43e5de5c" name="epr621.u29"/>
+        <part crc="c881a3bc" name="epr622.u28"/>
+        <part crc="297e7f42" name="epr623.u27"/>
+        <part crc="dc943125" name="epr624.u26"/>
+        <part crc="c86a0842" name="epr625.u8"/>
+        <part crc="9a48c939" name="epr626.u7"/>
+        <part crc="b4b147e2" name="epr627.u6"/>
+        <part crc="aecf3c26" name="epr628.u5"/>
+        <part crc="c5be665b" name="epr629.u4"/>
+        <part crc="4312388b" name="epr630.u3"/>
+        <part crc="6766c7e5" name="epr631.u2"/>
+        <part crc="ae68b7d5" name="epr632.u1"/>
+        <part crc="0bbfdb4e" name="epr617.u33" offset="0x400" length="0x400"/>
+        <part repeat="0x4000">00</part>
+        <part crc="a0811288" name="316-0390.u49"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            0D 11 00 00 F3 F3 F3 F3 FE E2 80 80 80 80 80 00
+            00 00 80 84 02 01 06 00 00 00 81 88 03 04 00 00
+            00 00 82 8B 13 05 00 00 00 00 83 8C 34 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Car Hunt / Deep Scan (France) (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

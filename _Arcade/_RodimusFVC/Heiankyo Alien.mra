@@ -1,0 +1,73 @@
+<misterromdescription>
+    <name>Heiankyo Alien</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Heiankyo Alien</series>
+    <year>1979</year>
+    <manufacturer>Denki Onkyo</manufacturer>
+    <category>Maze</category>
+
+    <setname>heiankyo</setname>
+    <parent>heiankyo</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>2</num_buttons>
+    <buttons names="Fire,Button 2,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,Select,Start,R,L"/>
+
+    <switches default="E7">
+        <dip name="Unknown" bits="0" ids="Off,On" values="1,0"/>
+        <dip name="2 Players Mode" bits="4" ids="Alternating,Simultaneous" values="1,0"/>
+        <dip name="Unknown" bits="1" ids="Off,On" values="1,0"/>
+        <dip name="Unknown" bits="2" ids="Off,On" values="1,0"/>
+        <dip name="Lives" bits="3" ids="3,5"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="heiankyo.zip">
+        <part crc="1eec8b36" name="ha16.u33"/>
+        <part crc="c1b9a1a5" name="ha15.u32"/>
+        <part crc="5b7b582e" name="ha14.u31"/>
+        <part crc="4aa67e01" name="ha13.u30"/>
+        <part crc="75889ca6" name="ha12.u29"/>
+        <part crc="d469226a" name="ha11.u28"/>
+        <part crc="4e203074" name="ha10.u27"/>
+        <part crc="9c3a3dd2" name="ha9.u26"/>
+        <part crc="6cc64878" name="ha8.u8"/>
+        <part crc="6d2f9527" name="ha7.u7"/>
+        <part crc="e467c353" name="ha6.u6"/>
+        <part crc="6a55eda8" name="ha3.u3"/>
+        <part repeat="0x400">00</part>
+        <part repeat="0x400">00</part>
+        <part crc="056b3b8b" name="ha2.u2"/>
+        <part crc="b8da2b5e" name="ha1.u1"/>
+        <part repeat="0x4400">00</part>
+        <part crc="67104ea9" name="316-138.u49" offset="0x10" length="0x10"/>
+        <part crc="67104ea9" name="316-138.u49" offset="0x0" length="0x10"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            17 11 00 00 F3 F3 D1 F3 FE E7 80 80 80 80 80 00
+            09 0D 80 84 01 05 00 00 0C 0E 81 88 04 06 00 00
+            0A 00 82 8B 02 00 00 00 0B 14 83 8C 03 13 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Heiankyo Alien (Denki Onkyo)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

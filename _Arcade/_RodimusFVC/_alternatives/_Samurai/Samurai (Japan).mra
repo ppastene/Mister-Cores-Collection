@@ -1,0 +1,70 @@
+<misterromdescription>
+    <name>Samurai (Japan)</name>
+    <region>Japan</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Samurai</series>
+    <year>1980</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>samuraij</setname>
+    <parent>samurai</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Fire,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="F1">
+        <dip name="Lives" bits="0" ids="3,4" values="1,0"/>
+        <dip name="Infinite Lives (Cheat)" bits="4" ids="Off,On" values="1,0"/>
+        <dip name="Unknown" bits="1" ids="Off,On" values="1,0"/>
+        <dip name="Unused" bits="2" ids="Off,On" values="1,0"/>
+        <dip name="Unused" bits="3" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="samuraij.zip|samurai.zip">
+        <part crc="a1a9cb03" name="epr-289.u33"/>
+        <part crc="49fede51" name="epr-290.u32"/>
+        <part crc="6503dd72" name="epr-291.u31"/>
+        <part crc="179c224f" name="epr-292.u30"/>
+        <part crc="3df2abec" name="epr-366.u29"/>
+        <part crc="b24517a4" name="epr-355.u28"/>
+        <part crc="992a6e5a" name="epr-367.u27"/>
+        <part crc="403c72ce" name="epr-368.u26"/>
+        <part crc="3cfd115b" name="epr-369.u8"/>
+        <part crc="2c30db12" name="epr-370.u7"/>
+        <part crc="87c71139" name="epr-299.u6"/>
+        <part crc="761f56cf" name="epr-371.u5"/>
+        <part crc="23de1ff7" name="epr-301.u4"/>
+        <part crc="292cfd89" name="epr-372.u3"/>
+        <part repeat="0x4C00">00</part>
+        <part crc="975f5fb0" name="pr55.clr"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            19 11 00 00 F3 F1 F1 F1 FE F1 80 80 80 80 80 00
+            00 00 80 84 02 01 00 00 00 00 81 88 03 04 00 00
+            00 00 82 8B 13 05 00 00 00 00 83 8C 00 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Samurai (Japan) (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

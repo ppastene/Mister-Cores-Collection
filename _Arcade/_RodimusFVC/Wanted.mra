@@ -1,0 +1,71 @@
+<misterromdescription>
+    <name>Wanted</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Wanted</series>
+    <year>1982</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>wantsega</setname>
+    <parent>wantsega</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>2</num_buttons>
+    <buttons names="Fire,Button 2,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,Select,Start,R,L"/>
+
+    <switches default="EB">
+        <dip name="Lives" bits="0,1" ids="6,5,4,3"/>
+        <dip name="Unused" bits="4" ids="Off,On" values="1,0"/>
+        <dip name="Cabinet" bits="2" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="3" ids="20k,30k" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="wantsega.zip">
+        <part crc="fc2ccf14" name="4-19_1_9afc.u33"/>
+        <part crc="c1c59576" name="4-19_2_d170.u32"/>
+        <part crc="862b7303" name="4-19_3_f291.u31"/>
+        <part crc="0dfab42b" name="4-19_4_a49b.u30"/>
+        <part crc="530b9a43" name="4-19_5_7b35.u29"/>
+        <part crc="d038b76e" name="4-19_6_bc98.u28"/>
+        <part crc="e1bf29bd" name="4-19_7_f852.u27"/>
+        <part crc="1b8a52cf" name="4-19_8_35df.u26"/>
+        <part crc="bd84a06a" name="4-19_9_ffa9.u8"/>
+        <part crc="bd321dd9" name="4-19_10_b2be.u7"/>
+        <part crc="2cb222ca" name="4-19_11_d8fb.u6"/>
+        <part crc="390e3c32" name="4-19_12_0bc6.u5"/>
+        <part crc="3779e91c" name="4-19_13_e95d.u4"/>
+        <part crc="7e70b2f7" name="4-19_14_dfca.u3"/>
+        <part crc="46b71a75" name="4-19_15_7032.u2"/>
+        <part crc="f1e8ba9e" name="4-19_16_0000.u1"/>
+        <part repeat="0x400">00</part>
+        <part crc="3470a4b6" name="82s123.u49"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            0D 11 00 00 F3 F3 F3 F3 FE EB 80 80 80 80 80 00
+            00 00 80 84 02 01 00 00 00 00 81 88 03 04 00 00
+            00 00 82 8B 13 05 00 00 00 00 83 8C 06 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Wanted (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

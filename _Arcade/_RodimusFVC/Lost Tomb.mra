@@ -1,0 +1,81 @@
+<misterromdescription>
+    <name>Lost Tomb</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Lost Tomb</series>
+    <year>1982</year>
+    <manufacturer>Stern Electronics</manufacturer>
+    <category>Shooter</category>
+
+    <setname>losttomb</setname>
+    <parent>losttomb</parent>
+    <mameversion>0289</mameversion>
+    <rbf>Galaxian</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (cw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls>twin stick</special_controls>
+    <num_buttons>6</num_buttons>
+    <buttons names="Fire,-,R Right,R Left,Coin,Start 1P,Start 2P,Pause,R Down,R Up,-" default="R,A,Y,Select,Start,,L,B,X"/>
+
+    <switches default="FF,FD,F3">
+        <dip name="Lives" bits="8,9" ids="3,5,Free Play,Invulnerability (Cheat)" values="1,2,3,0"/>
+        <dip name="Coinage" bits="17,18" ids="A 1/1  B 1/1,A 1/2  B 2/1,A 1/3  B 3/1,A 1/4  B 4/1" values="1,0,2,3"/>
+        <dip name="Demo Sounds" bits="19" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="losttomb.zip">
+        <part crc="d6176d2c" name="2c"/>
+        <part crc="a5f55f4a" name="2e"/>
+        <part crc="0169fa3c" name="2f"/>
+        <part crc="054481b6" name="2h-easy"/>
+        <part crc="249ee040" name="2j"/>
+        <part crc="c7d2e608" name="2l"/>
+        <part crc="bc4bc5b1" name="2m"/>
+        <part repeat="0x9000">00</part>
+        <part crc="61f137e7" name="5f"/>
+        <part repeat="0x1800">00</part>
+        <part crc="5581de5f" name="5h"/>
+        <part repeat="0x1800">00</part>
+        <part crc="1108b816" name="ltprom"/>
+        <part repeat="0x3FE0">00</part>
+        <part crc="b899be2a" name="5c"/>
+        <part crc="6907af31" name="5d"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            07 90 00 00 FF FD F3 FF FF FF 80 01 02 80 80 80
+            14 13 01 02 04 03 12 11 00 00 29 28 26 27 05 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            01 00 80 00 02 00 00 00 30 03 00 00 00 00 00 01
+            00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            02 77 15 80 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 81 10 00 50 03 00
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="80"></nvram>
+
+    <remark>Lost Tomb (Easy) (Stern Electronics)</remark>
+    <mratimestamp>20260928000000</mratimestamp>
+</misterromdescription>

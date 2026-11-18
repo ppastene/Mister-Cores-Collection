@@ -1,0 +1,89 @@
+<misterromdescription>
+    <name>Bulls Eye Darts (Galaxian Conversion)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Bulls Eye Darts</series>
+    <year>1985</year>
+    <manufacturer>Senko Industries</manufacturer>
+    <category>Sports - Darts</category>
+
+    <setname>bullsdrtg</setname>
+    <parent>bullsdrt</parent>
+    <mameversion>0289</mameversion>
+    <rbf>Galaxian</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (cw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Fire,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="00,00,00">
+        <dip name="Unknown" bits="10" ids="Off,On"/>
+        <dip name="Unknown" bits="11" ids="Off,On"/>
+        <dip name="Unknown" bits="12" ids="Off,On"/>
+        <dip name="Unknown" bits="13" ids="Off,On"/>
+        <dip name="Unknown" bits="15" ids="Off,On"/>
+        <dip name="Cabinet" bits="14" ids="Upright,Cocktail"/>
+        <dip name="Unknown" bits="18" ids="Off,On"/>
+        <dip name="Unknown" bits="19" ids="Off,On"/>
+        <dip name="Unknown" bits="20" ids="Off,On"/>
+        <dip name="Unknown" bits="21" ids="Off,On"/>
+        <dip name="Unknown" bits="22" ids="Off,On"/>
+        <dip name="Unknown" bits="23" ids="Off,On"/>
+        <dip name="Coinage" bits="16" ids="1C/1C,2C/1C"/>
+        <dip name="Award Free Game" bits="17" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="bullsdrtg.zip|bullsdrt.zip">
+        <part crc="db34f130" name="cpu.bin" offset="0x0" length="0x1000"/>
+        <part crc="db34f130" name="cpu.bin" offset="0x1000" length="0x1000"/>
+        <part crc="db34f130" name="cpu.bin" offset="0x2000" length="0x1000"/>
+        <part crc="db34f130" name="cpu.bin" offset="0x3000" length="0x1000"/>
+        <part repeat="0xC000">00</part>
+        <part crc="c2ad5c84" name="vid_j1.bin" offset="0x0" length="0x2000"/>
+        <part crc="535be505" name="vid_p.bin" offset="0x0" length="0x2000"/>
+        <part crc="16b19bfa" name="prom.bin"/>
+        <part repeat="0xFFE0">00</part>
+        <part crc="c2ad5c84" name="vid_j1.bin" offset="0x2000" length="0x2000"/>
+        <part crc="535be505" name="vid_p.bin" offset="0x2000" length="0x2000"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            00 90 00 00 00 00 00 FF FF FF 80 01 02 80 80 80
+            11 12 03 04 05 01 00 02 13 14 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            00 04 00 0F 03 00 04 00 00 00 00 00 40 00 00 00
+            00 00 04 35
+        </part>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            01 41 BA A5 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 40 05 00 87 00 00
+            00 00 40 5E 00 01 30 30
+            00 00 40 06 00 01 00 00
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="137"></nvram>
+
+    <remark>Bulls Eye Darts (Galaxian Conversion) (Senko Industries)</remark>
+    <mratimestamp>20260928000000</mratimestamp>
+</misterromdescription>

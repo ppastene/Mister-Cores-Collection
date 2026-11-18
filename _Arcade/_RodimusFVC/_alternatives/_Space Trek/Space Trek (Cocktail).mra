@@ -1,0 +1,72 @@
+<misterromdescription>
+    <name>Space Trek (Cocktail)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Space Trek</series>
+    <year>1980</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>spacetrkc</setname>
+    <parent>spacetrk</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>2</num_buttons>
+    <buttons names="Fire,Button 2,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,Select,Start,R,L"/>
+
+    <switches default="E5">
+        <dip name="Lives" bits="0" ids="3,4" values="1,0"/>
+        <dip name="Unused" bits="4" ids="Off,On" values="1,0"/>
+        <dip name="Unknown" bits="1" ids="Off,On" values="1,0"/>
+        <dip name="Bonus Life" bits="2" ids="Off,On"/>
+        <dip name="Unused" bits="3" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="spacetrkc.zip|spacetrk.zip">
+        <part crc="b056b928" name="u33c.bin"/>
+        <part crc="dffb11d9" name="u32c.bin"/>
+        <part crc="9b25d46f" name="u31c.bin"/>
+        <part crc="3a612bfe" name="u30c.bin"/>
+        <part crc="d8bb6e0c" name="u29c.bin"/>
+        <part crc="0e367740" name="u28c.bin"/>
+        <part crc="d59fec86" name="u27c.bin"/>
+        <part crc="9deefa0f" name="u26c.bin"/>
+        <part crc="613116c5" name="u8c.bin"/>
+        <part crc="3bdf2464" name="u7c.bin"/>
+        <part crc="039d73fa" name="u6c.bin"/>
+        <part crc="1638344f" name="u5c.bin"/>
+        <part crc="e34443cd" name="u4c.bin"/>
+        <part crc="6f16cbd7" name="u3c.bin"/>
+        <part crc="94da3cdc" name="u2c.bin"/>
+        <part crc="2a228bf4" name="u1c.bin"/>
+        <part repeat="0x4400">00</part>
+        <part crc="aabae4cd" name="u49.bin"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            0F 10 00 00 F3 F3 F1 F1 FE E5 80 80 80 80 80 00
+            0B 0D 80 84 04 03 00 00 09 0E 81 88 02 01 00 00
+            0C 00 82 8B 13 05 00 00 0A 00 83 8C 06 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Space Trek (Cocktail) (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

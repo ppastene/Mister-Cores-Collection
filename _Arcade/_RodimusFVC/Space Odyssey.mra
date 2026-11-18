@@ -1,0 +1,105 @@
+<misterromdescription>
+    <name>Space Odyssey</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform>Sega G-80 Raster</platform>
+    <series>Space Odyssey</series>
+    <year>1981</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Shooter</category>
+
+    <setname>spaceod</setname>
+    <parent>spaceod</parent>
+    <mameversion>0270</mameversion>
+    <rbf>SegaG80</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>no</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>2</num_buttons>
+    <buttons names="Fire,Bomb,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,Select,Start,R,L"/>
+
+    <switches default="E4,33">
+        <dip name="Lives" bits="0,1" ids="3,4,5,6" values="0,2,1,3"/>
+        <dip name="Cabinet" bits="2" ids="Upright,Cocktail" values="1,0"/>
+        <dip name="Bonus Life" bits="3,4" ids="20000,40000,60000,80000" values="0,2,1,3"/>
+        <dip name="Infinite Lives (Cheat)" bits="7" ids="Off,On" values="1,0"/>
+        <dip name="Coin A" bits="8,11" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3 6/4,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,1C/2C,1 Coin/2 Credits 5/11,1 Coin/2 Credits 4/9,1C/3C,1C/4C,1C/5C,1C/6C" values="0,1,2,9,10,3,11,12,13,4,14,15,5,6,7,8"/>
+        <dip name="Coin B" bits="12,15" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3 6/4,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,1C/2C,1 Coin/2 Credits 5/11,1 Coin/2 Credits 4/9,1C/3C,1C/4C,1C/5C,1C/6C" values="0,1,2,9,10,3,11,12,13,4,14,15,5,6,7,8"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="spaceod.zip">
+        <part crc="bbae3cd1" name="so-959.cpu-25"/>
+        <part crc="b396c097" name="spod941b.prom-u1"/>
+        <part crc="e4451554" name="spod942a.prom-u2"/>
+        <part crc="0d87a8f3" name="spod943a.prom-u3"/>
+        <part crc="9c79f505" name="spod944a.prom-u4"/>
+        <part crc="375681e4" name="spod945a.prom-u5"/>
+        <part crc="4a27ff64" name="spod946a.prom-u6"/>
+        <part crc="6170de1c" name="spod947a.prom-u7"/>
+        <part crc="44fbbc87" name="spod948a.prom-u8"/>
+        <part crc="b2705596" name="spod949a.prom-u9"/>
+        <part crc="70a7a3b4" name="so-950.prom-u10"/>
+        <part crc="2bb7b5a3" name="spod951a.prom-u11"/>
+        <part crc="5bf19a12" name="so-952.prom-u12"/>
+        <part crc="8066ac83" name="so-953.prom-u13"/>
+        <part crc="44ed6a0d" name="so-954.prom-u14"/>
+        <part crc="254ca0fa" name="spod955a.prom-u15"/>
+        <part crc="97de45a9" name="so-956.prom-u16"/>
+        <part crc="1e31d118" name="spod957a.prom-u17"/>
+        <part crc="aa07e8e7" name="spod958a.prom-u18"/>
+        <part repeat="0x2800">FF</part>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            02 14 00 00 FF FF E4 33 00 FE 80 80 00 01 80 80
+            11 00 00 00 12 0E 0D 00 16 13 09 0B 00 14 0A 0C
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            03 04 02 01 05 06 00 00 16 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 7: ROM -->
+    <rom index="7" md5="none" zip="spaceod.zip">
+        <part crc="24a81c04" name="epr-18.bg-u10"/>
+        <part crc="6c7490c0" name="epr-17.bg-u9"/>
+        <part crc="acdf203e" name="epr-16.bg-u8"/>
+        <part crc="ae0e5d71" name="epr-15.bg-u7"/>
+        <part crc="d2ebd915" name="epr-14.bg-u6"/>
+        <part crc="74bd7f9a" name="epr-13.bg-u5"/>
+    </rom>
+
+    <!-- Index 8: ROM -->
+    <rom index="8" md5="none" zip="spaceod.zip">
+        <part crc="a87bfc0a" name="epr-09.bg-u1"/>
+        <part crc="8ce88100" name="epr-10.bg-u2"/>
+        <part crc="1bdbdab5" name="epr-11.bg-u3"/>
+        <part crc="629a4a1f" name="epr-12.bg-u4"/>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            00 0F BC 40 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 C9 07 00 02 00 00
+            00 00 C9 21 00 01 05 05
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="3"></nvram>
+
+    <remark>Space Odyssey (Version 2) (Sega)</remark>
+    <mratimestamp>20261105000000</mratimestamp>
+</misterromdescription>

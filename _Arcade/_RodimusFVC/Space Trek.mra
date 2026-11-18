@@ -1,0 +1,72 @@
+<misterromdescription>
+    <name>Space Trek</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Space Trek</series>
+    <year>1980</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Maze</category>
+
+    <setname>spacetrk</setname>
+    <parent>spacetrk</parent>
+    <mameversion>0289</mameversion>
+    <rbf>SegaVICDual</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>2</num_buttons>
+    <buttons names="Fire,Button 2,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,B,Select,Start,R,L"/>
+
+    <switches default="E5">
+        <dip name="Lives" bits="0" ids="3,4" values="1,0"/>
+        <dip name="Unused" bits="4" ids="Off,On" values="1,0"/>
+        <dip name="Unknown" bits="1" ids="Off,On" values="1,0"/>
+        <dip name="Bonus Life" bits="2" ids="Off,On"/>
+        <dip name="Unused" bits="3" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="spacetrk.zip">
+        <part crc="9033fe50" name="u33.bin"/>
+        <part crc="08f61f0d" name="u32.bin"/>
+        <part crc="1088a8c4" name="u31.bin"/>
+        <part crc="55560cc8" name="u30.bin"/>
+        <part crc="71713958" name="u29.bin"/>
+        <part crc="7bcf5ca3" name="u28.bin"/>
+        <part crc="ad7a2065" name="u27.bin"/>
+        <part crc="6060fe77" name="u26.bin"/>
+        <part crc="75a90624" name="u8.bin"/>
+        <part crc="7b31a2ab" name="u7.bin"/>
+        <part crc="94135b33" name="u6.bin"/>
+        <part crc="cfbf2538" name="u5.bin"/>
+        <part crc="b4b95129" name="u4.bin"/>
+        <part crc="03ca1d70" name="u3.bin"/>
+        <part crc="a968584b" name="u2.bin"/>
+        <part crc="e6e300e8" name="u1.bin"/>
+        <part repeat="0x4400">00</part>
+        <part crc="aabae4cd" name="u49.bin"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            0F 10 00 00 F3 F3 F1 F1 FE E5 80 80 80 80 80 00
+            00 00 80 84 04 03 00 00 00 00 81 88 02 01 00 00
+            00 00 82 8B 13 05 00 00 00 00 83 8C 06 14 00 00
+            11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <remark>Space Trek (Upright) (Sega)</remark>
+    <mratimestamp>20261030000000</mratimestamp>
+</misterromdescription>

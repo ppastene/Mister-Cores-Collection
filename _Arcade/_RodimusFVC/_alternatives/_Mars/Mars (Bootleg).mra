@@ -1,0 +1,91 @@
+<misterromdescription>
+    <name>Mars (Bootleg)</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>yes</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Mars</series>
+    <year>1984</year>
+    <manufacturer>bootleg (Arfyc)</manufacturer>
+    <category>Shooter</category>
+
+    <setname>marsarf</setname>
+    <parent>mars</parent>
+    <mameversion>0289</mameversion>
+    <rbf>Galaxian</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (cw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls>twin stick</special_controls>
+    <num_buttons>6</num_buttons>
+    <buttons names="-,-,R Right,R Left,Coin,Start 1P,Start 2P,Pause,R Down,R Up,-" default="A,Y,Select,Start,R,L,B,X"/>
+
+    <switches default="FF,FC,F9">
+        <dip name="Coin B" bits="8" ids="1C/3C,1C/5C"/>
+        <dip name="Coin A" bits="9" ids="2C/1C,1C/1C" values="1,0"/>
+        <dip name="Cabinet" bits="17" ids="Upright,Cocktail"/>
+        <dip name="Unknown" bits="18" ids="Off,On" values="1,0"/>
+        <dip name="Lives" bits="19" ids="3,255 (Cheat)" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="marsarf.zip|mars.zip">
+        <part crc="2fe47b97" name="10041a.ma1"/>
+        <part crc="5c37ed57" name="10041a.ma3"/>
+        <part crc="06c6bb56" name="10041a.ma2"/>
+        <part crc="8e68a1a2" name="10041a.ma4"/>
+        <part crc="5b7eac43" name="10041a.ma5"/>
+        <part crc="4b83a795" name="10041a.ma6"/>
+        <part crc="a09f402e" name="10041a.ma7"/>
+        <part repeat="0xC800">00</part>
+        <part crc="3bd970ba" name="10041a.c1"/>
+        <part repeat="0x1800">00</part>
+        <part crc="d9929b15" name="10041a.c2"/>
+        <part repeat="0x1800">00</part>
+        <part crc="413703bf" name="10041a_7603-5.bin"/>
+        <part repeat="0x3FE0">00</part>
+        <part crc="fd47b688" name="09041a.s1"/>
+        <part crc="de7912da" name="09041a.s2"/>
+        <part crc="ebf90e0b" name="09041a.s3"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            0F 90 00 00 FF FC F9 FF FF FF 80 01 02 80 80 80
+            09 16 26 27 04 03 12 11 00 00 2A 2B 0C 0B 14 13
+            0A 00 00 00 01 28 02 29 00 00 00 00 00 2C 00 2D
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            01 00 00 00 02 00 00 00 20 03 00 00 04 00 00 00
+            00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 3: Hiscore -->
+    <rom index="3" md5="none">
+        <part>
+            01 10 3B 78 00 FF 00 02 00 02 00 01 11 11 00 00
+            00 00 42 00 00 12 00 01
+            00 00 40 A8 00 03 00 01
+            00 00 4A 41 00 01 10 10
+            00 00 4A 21 00 01 01 01
+            00 00 4A 01 00 01 00 00
+            00 00 49 E1 00 01 00 00
+            00 00 49 C1 00 01 00 00
+            00 00 49 A1 00 01 00 00
+        </part>
+    </rom>
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="27"></nvram>
+
+    <remark>Mars (Bootleg) (Arfyc Bootleg)</remark>
+    <mratimestamp>20260928000000</mratimestamp>
+</misterromdescription>

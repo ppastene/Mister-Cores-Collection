@@ -1,0 +1,79 @@
+<misterromdescription>
+    <name>Sindbad Mystery</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform>Sega G-80 Raster</platform>
+    <series>Sindbad Mystery</series>
+    <year>1983</year>
+    <manufacturer>Sega</manufacturer>
+    <category>Action</category>
+
+    <setname>sindbadm</setname>
+    <parent>sindbadm</parent>
+    <mameversion>0270</mameversion>
+    <rbf>SegaG80</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>no</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>4-way</joystick>
+    <special_controls></special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Action,-,-,-,Coin,Start 1P,Start 2P,Pause,-,-,-" default="A,Select,Start,R,L"/>
+
+    <switches default="FC,FF">
+        <dip name="Lives" bits="0,1" ids="3,4,5,6" values="0,2,1,3"/>
+        <dip name="Cabinet" bits="2" ids="Upright,Cocktail" values="1,0"/>
+        <dip name="Infinite Lives (Cheat)" bits="7" ids="Off,On" values="1,0"/>
+        <dip name="Coin A" bits="8,11" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,2C/3C,1C/2C,1 Coin/2 Credits 5/11,1C/3C,1C/4C,1C/5C,1C/6C" values="7,8,9,5,4,15,3,2,1,6,14,0,13,12,11,10"/>
+        <dip name="Coin B" bits="12,15" ids="4C/1C,3C/1C,2C/1C,2 Coins/1 Credit 5/3,2 Coins/1 Credit 4/3,1C/1C,1 Coin/1 Credit 5/6,1 Coin/1 Credit 4/5,1 Coin/1 Credit 2/3,2C/3C,1C/2C,1 Coin/2 Credits 5/11,1C/3C,1C/4C,1C/5C,1C/6C" values="7,8,9,5,4,15,3,2,1,6,14,0,13,12,11,10"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="sindbadm.zip">
+        <part crc="51f2e51e" name="epr-5393.4d"/>
+        <part crc="d39ce2ee" name="epr-5394.4e"/>
+        <part crc="b1d15c82" name="epr-5395.4h"/>
+        <part crc="ea9d40bf" name="epr-5396.4j"/>
+        <part crc="595d16dc" name="epr-5397.4l"/>
+        <part crc="e57ff63c" name="epr-5398.4m"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            04 15 00 00 FF FF FC FF FF FE 80 80 00 01 80 80
+            11 00 00 00 12 00 01 00 16 13 03 05 00 14 04 02
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+            0B 0C 0D 0A 09 00 00 00 16 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 6: ROM -->
+    <rom index="6" md5="none" zip="sindbadm.zip">
+        <part crc="5114f18e" name="epr-5400.4a"/>
+    </rom>
+
+    <!-- Index 7: ROM -->
+    <rom index="7" md5="none" zip="sindbadm.zip">
+        <part crc="f6044a1e" name="epr-5428.9m"/>
+        <part crc="b23eca10" name="epr-5429.9p"/>
+    </rom>
+
+    <!-- Index 8: ROM -->
+    <rom index="8" md5="none" zip="sindbadm.zip">
+        <part crc="4bfc2e95" name="epr-5424.9e"/>
+        <part crc="b654841a" name="epr-5425.9h"/>
+        <part crc="9de0da28" name="epr-5426.9j"/>
+        <part crc="a94f4d41" name="epr-5427.9l"/>
+    </rom>
+
+    <remark>Sindbad Mystery (Sega)</remark>
+    <mratimestamp>20261105000000</mratimestamp>
+</misterromdescription>

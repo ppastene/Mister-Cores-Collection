@@ -1,0 +1,59 @@
+<misterromdescription>
+    <name>Multipede</name>
+    <region>World</region>
+    <homebrew>no</homebrew>
+    <bootleg>no</bootleg>
+    <version></version>
+    <alternative></alternative>
+    <platform></platform>
+    <series>Multipede</series>
+    <year>2002</year>
+    <manufacturer>hack (Braze Technologies)</manufacturer>
+    <category>Shooter</category>
+
+    <setname>multiped</setname>
+    <parent>multiped</parent>
+    <mameversion>0289</mameversion>
+    <rbf>Centipede</rbf>
+    <about></about>
+
+    <resolution>15kHz</resolution>
+    <rotation>vertical (ccw)</rotation>
+    <flip>yes</flip>
+
+    <players>2 (alternating)</players>
+    <joystick>8-way</joystick>
+    <special_controls>trackball</special_controls>
+    <num_buttons>1</num_buttons>
+    <buttons names="Fire,-,-,-,Coin,Start 1P,Start 2P,Pause" default="A,Select,Start,R,L"/>
+
+    <switches default="03,00,00">
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail" values="1,0"/>
+        <dip name="Service Mode" bits="1" ids="Off,On" values="1,0"/>
+    </switches>
+
+    <!-- Index 0: ROM -->
+    <rom index="0" md5="none" zip="multiped.zip">
+        <part crc="8248d42c" name="cm_12a.bin"/>
+        <part crc="45613f22" name="cm_5r.bin"/>
+        <part crc="cfbc3622" name="cm_5p.bin"/>
+        <part crc="6fa3093a" name="136001-213.7e"/>
+    </rom>
+
+    <!-- Index 1: Config -->
+    <rom index="1">
+        <part>
+            06 11 02 00 30 73 FF FF 00 00 00 00 00 00 00 00
+            00 00 00 00 05 13 00 00 00 00 00 00 0D 14 00 00
+            04 03 02 01 15 11 12 16 0C 0B 0A 09 00 80 00 81
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </part>
+    </rom>
+
+    <!-- Index 4: NVRAM -->
+    <rom index="4"></rom>
+    <nvram index="4" size="128"></nvram>
+
+    <remark>Multipede (Centipede/Millipede Multigame Kit) (Braze Technologies)</remark>
+    <mratimestamp>20261012000000</mratimestamp>
+</misterromdescription>
