@@ -1,0 +1,61 @@
+<misterromdescription>
+	<name>Space Duel (Rev 1)</name>
+	<region></region>
+	<homebrew>no</homebrew>
+	<bootleg>no</bootleg>
+	<version>Rev 1</version>
+	<alternative></alternative>
+	<platform>Space Duel</platform>
+	<series></series>
+	<year>1982</year>
+	<manufacturer>Atari</manufacturer>
+	<category>Shooter - Multi-directional</category>
+
+	<setname>spacduel1</setname>
+	<parent>spacduel</parent>
+	<mameversion>0287</mameversion>
+	<rbf>SpaceDuel</rbf>
+	<about author="Videodr0me" webpage="https://github.com/Videodr0me">Atari Space Duel with native color-vector rendering and configurable CRT presentation.</about>
+
+	<rotation>horizontal</rotation>
+	<flip>yes</flip>
+
+	<players>2</players>
+	<joystick>2-way horizontal</joystick>
+	<num_buttons>3</num_buttons>
+	<buttons default="A,B,X,Start,Select,R,L,Y" names="Fire,Shield,Thrust,Start,Select,Coin,Pause,Coin 2"></buttons>
+
+	<switches default="FF,FF,0F,00">
+		<dip bits="0,1" ids="3,4,5,6" name="Lives" values="2,3,0,1"></dip>
+		<dip bits="2,3" ids="Easy,Normal,Medium,Hard" name="Difficulty" values="2,3,0,1"></dip>
+		<dip bits="4,5" ids="English,German,French,Spanish" name="Language" values="3,2,1,0"></dip>
+		<dip bits="6,7" ids="8000,10000,15000,None" name="Bonus Life" values="0,3,2,1"></dip>
+		<dip bits="8,9" ids="2C 1C,1C 1C,1C 2C,Free Play" name="Coinage" values="2,3,0,1"></dip>
+		<dip bits="10,11" ids="x1,x4,x5,x6" name="Coin B" values="3,2,1,0"></dip>
+		<dip bits="12" ids="x1,x2" name="Coin A" values="1,0"></dip>
+		<dip bits="13,15" ids="None,1 each 2,1 each 3,1 each 4,2 each 4,1 each 5" name="Bonus Coins" values="7,6,2,5,4,3"></dip>
+		<dip bits="16" ids="Game,Player" name="Charge By"></dip>
+		<dip bits="17" ids="Off,On" name="2 Credit Minimum" values="1,0"></dip>
+		<dip bits="18" ids="Off,On" name="1 Player Only" values="1,0"></dip>
+		<dip bits="24" ids="Upright,Cocktail" name="Cabinet"></dip>
+		<dip bits="25" ids="Off,On" name="Service Mode"></dip>
+		<dip bits="26" ids="Off,On" name="Diagnostic Step"></dip>
+	</switches>
+
+	<rom index="0" md5="none" type="merged|nonmerged" zip="spacduel1.zip|spacduel.zip">
+		<part crc="cd239e6c" name="136006-101.r1"></part>
+		<part crc="4c451e8a" name="136006-102.np1"></part>
+		<part crc="ee72da63" name="136006-103.m1"></part>
+		<part crc="e41b38a3" name="136006-104.kl1"></part>
+		<part crc="5652710f" name="136006-105.j1"></part>
+		<part crc="691122fe" name="136006-106.r7"></part>
+		<part repeat="0x800">00</part>
+		<part crc="d8dd0461" name="136006-107.np7"></part>
+		<part crc="5903af03" name="136002-125.n4"></part>
+	</rom>
+
+	<rom index="4"></rom>
+	<nvram index="4" size="64"></nvram>
+
+	<mratimestamp>20261114000000</mratimestamp>
+</misterromdescription>
