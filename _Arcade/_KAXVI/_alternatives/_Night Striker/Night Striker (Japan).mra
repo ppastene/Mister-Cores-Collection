@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<misterromdescription>
+  <name>Night Striker (Japan)</name>
+  <setname>nightstrj</setname>
+  <year>1989</year>
+  <manufacturer>Taito</manufacturer>
+  <rbf>NightStriker</rbf>
+  <rotation>horizontal</rotation>
+  <buttons names="Trigger,Shot,Start,Coin" default="B,A,Start,Select" />
+  <rom index="0" zip="nightstrj.zip|nightstr.zip" md5="bef65e335ad097d2de96106021719a95">
+    <interleave output="16">
+      <part name="b91-45.bin" crc="7ad63421" map="10" />
+      <part name="b91-44.bin" crc="4bc30adf" map="01" />
+    </interleave>
+    <interleave output="16">
+      <part name="b91-43.bin" crc="3e6f727a" map="10" />
+      <part name="b91-42.bin" crc="7179ef2f" map="01" />
+    </interleave>
+    <interleave output="16">
+      <part name="b91-39.bin" crc="725b23ae" map="10" />
+      <part name="b91-40.bin" crc="81fb364d" map="01" />
+    </interleave>
+    <part name="b91-41.bin" crc="2694bb42" />
+    <part repeat="0x20000">FF</part>
+    <part name="b91-11.bin" crc="fff8ce31" />
+    <part repeat="0x80000">FF</part>
+    <interleave output="64">
+      <part name="b91-04.bin" crc="8ca1970d" map="00000021" />
+      <part name="b91-03.bin" crc="cd5fed39" map="00002100" />
+      <part name="b91-02.bin" crc="457c64b8" map="00210000" />
+      <part name="b91-01.bin" crc="3731d94f" map="21000000" />
+    </interleave>
+    <interleave output="64">
+      <part name="b91-08.bin" crc="66f35c34" map="00000021" />
+      <part name="b91-07.bin" crc="4d8ec6cf" map="00002100" />
+      <part name="b91-06.bin" crc="a34dc839" map="00210000" />
+      <part name="b91-05.bin" crc="5e72ac90" map="21000000" />
+    </interleave>
+    <part name="b91-09.bin" crc="5f247ca2" />
+    <part name="b91-10.bin" crc="1d8f05b4" />
+    <part name="b91-13.bin" crc="8c7bf0f5" />
+    <part name="b91-12.bin" crc="da77c7af" />
+    <part name="b91-14.bin" crc="6bc314d3" />
+  </rom>
+  <rom index="1">
+    <part>01</part>
+  </rom>
+  <rom index="3">
+    <part>00 00 00 00 FF FF 00 04 00 04 00 01 00 FF 10 00 00 10 9B 9A 00 04 00 40 00 10 DE 48 01 F3 00 41</part>
+  </rom>
+  <nvram index="4" size="503" />
+</misterromdescription>
