@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<misterromdescription>
+  <name>Chase H.Q. (World)</name>
+  <setname>chasehq</setname>
+  <year>1988</year>
+  <manufacturer>Taito</manufacturer>
+  <rbf>ChaseHQ</rbf>
+  <rotation>horizontal</rotation>
+  <buttons names="Accelerator,Brake,Turbo,Shift,Start,Coin" default="A,B,X,Y,Start,Select" />
+  <rom index="0" zip="chasehq.zip" md5="a1f564bbb240847066f8adc77187503a">
+    <interleave output="16">
+      <part name="b52-130.36" crc="4e7beb46" map="10" />
+      <part name="b52-136.29" crc="2f414df0" map="01" />
+    </interleave>
+    <interleave output="16">
+      <part name="b52-131.37" crc="aa945d83" map="10" />
+      <part name="b52-129.30" crc="0eaebc08" map="01" />
+    </interleave>
+    <interleave output="16">
+      <part name="b52-132.39" crc="a2f54789" map="10" />
+      <part name="b52-133.55" crc="12232f95" map="01" />
+    </interleave>
+    <part repeat="0x20000">FF</part>
+    <part name="b52-137.51" crc="37abb74a" />
+    <part repeat="0x30000">FF</part>
+    <part name="b52-29.27" crc="8366d27c" />
+    <part repeat="0x80000">FF</part>
+    <interleave output="64">
+      <part name="b52-34.5" crc="7d8dce36" map="00000021" />
+      <part name="b52-35.7" crc="78eeec0d" map="00002100" />
+      <part name="b52-36.9" crc="61e89e91" map="00210000" />
+      <part name="b52-37.11" crc="f02e47b9" map="21000000" />
+    </interleave>
+    <interleave output="64">
+      <part name="b52-30.4" crc="1b8cc647" map="00000021" />
+      <part name="b52-31.6" crc="f1998e20" map="00002100" />
+      <part name="b52-32.8" crc="8620780c" map="00210000" />
+      <part name="b52-33.10" crc="e6f4b8c4" map="21000000" />
+    </interleave>
+    <part name="b52-38.34" crc="5b5bf7f6" />
+    <part name="b52-28.4" crc="963bc82b" />
+    <part name="b52-115.71" crc="4e117e93" />
+    <part name="b52-114.72" crc="3a73d6b1" />
+    <part name="b52-113.73" crc="2c6a3a05" />
+    <part name="b52-116.70" crc="ad46983c" />
+  </rom>
+  <rom index="1">
+    <part>00</part>
+  </rom>
+  <rom index="3">
+    <part>00 00 00 00 FF FF 00 04 00 04 00 01 00 FF 10 00 00 10 17 60 00 A0 20 24</part>
+  </rom>
+  <nvram index="4" size="160" />
+</misterromdescription>
